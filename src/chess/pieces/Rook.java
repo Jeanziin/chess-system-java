@@ -9,6 +9,13 @@ public class Rook extends ChessPiece {
     public Rook(){
 
     }
+
+    @Override
+    public boolean[][] possibleMoves() {
+        boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
+        return mat;
+    }
+
     public Rook(Board board, Color color){
         super(board, color);
     }
